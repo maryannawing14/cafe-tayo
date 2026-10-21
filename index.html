@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Tayo | Your Daily Cup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <section class="ad-overlay" id="cafe-ad" aria-label="Cafe Tayo advertisement" role="dialog" aria-modal="true" aria-labelledby="ad-title">
+    <div class="ad-card">
+      <div class="ad-topline"><span class="ad-brand"><span>☕</span> Cafe Tayo.</span><span class="ad-sponsored">A LITTLE BREAK, A LOT OF JOY</span></div>
+      <div class="ad-content">
+        <div class="ad-copy">
+          <p class="ad-kicker"><span class="ad-sparkle">✦</span> YOUR HAPPY PLACE IS HERE</p>
+          <h2 id="ad-title">Sip into<br><em>something lovely.</em></h2>
+          <p class="ad-description">Fresh coffee, creamy matcha, and sweet treats made to brighten your day.</p>
+          <div class="ad-cta-row"><a class="ad-cta" href="menu.html">Explore our menu <span>↗</span></a><span class="ad-fresh">Freshly made, always.</span></div>
+        </div>
+        <div class="ad-art" aria-hidden="true">
+          <div class="ad-orbit orbit-a"></div><div class="ad-orbit orbit-b"></div>
+          <div class="ad-sticker">MADE<br>WITH ♥</div>
+          <div class="ad-drink ad-drink-coffee"><div class="drink-lid"></div><div class="drink-cup"><span class="cup-logo">☕</span><span class="cup-label">CAFE<br>TAYO</span></div><div class="cup-shadow"></div></div>
+          <div class="ad-drink ad-drink-matcha"><div class="drink-lid"></div><div class="drink-cup"><span class="cup-logo">✿</span><span class="cup-label">MATCHA<br>LATTE</span></div></div>
+          <span class="ad-bean bean-one">✦</span><span class="ad-bean bean-two">✳</span><span class="ad-bean bean-three">♡</span>
+        </div>
+      </div>
+      <div class="ad-bottom"><div class="ad-progress-track"><span id="ad-progress"></span></div><span class="ad-countdown" id="ad-countdown">Your homepage opens in 30s</span><button class="ad-skip" id="ad-skip" type="button" disabled>Skip ad in 5s</button></div>
+    </div>
+  </section>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">☕</span><span>Cafe <b>Tayo.</b><small>GOOD COFFEE, GOOD DAYS</small></span></a>
+    <nav><a class="active" href="index.html">Home</a><a href="menu.html">Our Menu</a></nav>
+    <a class="cart-link" href="payment.html">Your order <span class="cart-count">0</span> <span>↗</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> YOUR NEIGHBORHOOD COFFEE SPOT</p>
+        <h1>A little sip.<br><em>A lot of happy.</em></h1>
+        <p class="hero-desc">Your favorite coffee, matcha, and sweet treats—made fresh and ready when you are.</p>
+        <div class="hero-actions"><a class="btn btn-dark" href="menu.html">Order your favorites <span>↗</span></a><a class="text-link" href="#favorites">Explore the menu ↓</a></div>
+        <div class="hero-note"><div class="avatar-stack"><span>☕</span><span>♡</span><span>✦</span></div><p><b>Made with care</b><br><small>One cup at a time.</small></p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1100&q=85" alt="Freshly made coffee"></div>
+        <div class="floating-tag tag-top"><span>✦</span> Freshly brewed daily</div>
+        <div class="floating-tag tag-bottom"><span class="tag-icon">♡</span><div><b>Your kind of coffee</b><small>Choose it. Love it.</small></div></div>
+        <span class="decor decor-one">✳</span><span class="decor decor-two">✦</span>
+      </div>
+    </section>
+    <section class="benefits">
+      <div><span class="benefit-icon">☼</span><p><b>Freshly made</b><small>Prepared just for you</small></p></div>
+      <div><span class="benefit-icon">♡</span><p><b>Made to love</b><small>Little treats, big comfort</small></p></div>
+      <div><span class="benefit-icon">⌁</span><p><b>Easy ordering</b><small>Order ahead in a few clicks</small></p></div>
+    </section>
+    <section class="section" id="favorites">
+      <div class="section-heading"><div><p class="eyebrow">A FEW CROWD FAVORITES</p><h2>Find your <em>happy place.</em></h2></div><a class="text-link" href="menu.html">View full menu ↗</a></div>
+      <div class="product-grid">
+        <article class="product-card"><div class="product-image"><span class="product-badge">BESTSELLER</span><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="Iced latte"></div><div class="product-info"><div><h3>Iced Cafe Latte</h3><p>Smooth espresso with milk</p></div><b>₱120</b></div><button class="btn btn-outline add-home" data-name="Iced Cafe Latte" data-price="120" data-category="Coffee" data-image="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80">Add to order <span>＋</span></button></article>
+        <article class="product-card"><div class="product-image"><img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=700&q=80" alt="Matcha latte"></div><div class="product-info"><div><h3>Iced Matcha Latte</h3><p>Earthy matcha, creamy milk</p></div><b>₱145</b></div><button class="btn btn-outline add-home" data-name="Iced Matcha Latte" data-price="145" data-category="Matcha" data-image="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=700&q=80">Add to order <span>＋</span></button></article>
+        <article class="product-card"><div class="product-image"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80" alt="Fresh pastry"></div><div class="product-info"><div><h3>Butter Croissant</h3><p>Flaky, buttery, freshly baked</p></div><b>₱85</b></div><button class="btn btn-outline add-home" data-name="Butter Croissant" data-price="85" data-category="Dessert" data-image="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80">Add to order <span>＋</span></button></article>
+      </div>
+    </section>
+    <section class="order-banner"><div><p class="eyebrow">YOUR COFFEE BREAK IS CALLING</p><h2>Good things are<br><em>just a few clicks away.</em></h2></div><a class="btn btn-light" href="menu.html">Let's order <span>↗</span></a></section>
+  </main>
+  <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark">☕</span><span>Cafe <b>Tayo.</b><small>GOOD COFFEE, GOOD DAYS</small></span></a><p>Made with love, served with a smile. © 2026 Cafe Tayo.</p><a href="menu.html">Order something good ↗</a></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+  <script src="ad.js"></script>
+</body></html>
